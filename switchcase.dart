@@ -11,11 +11,12 @@ void main(){
     case "medium":
       price = 7;
       break;
-    case "rarge":
+    case "large":
       price = 10;
       break;
     default:
       print("Invalid Pizza Size! Please try agian.");
+      return;
   }
   print("How many pizzas do you want of $pizza_size?");
   int? quantity = int.tryParse(stdin.readLineSync() ?? '');
